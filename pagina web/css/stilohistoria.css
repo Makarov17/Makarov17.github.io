@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.margen-interno{
+    padding: 0 50px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.padre{
+display: flex;
+flex-flow: column nowrap; 
+}
+.header{
+    background: url(../imagenes/terror-inicio.jpg);
+    background-position: center;
+    background-attachment:contain  ;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap; 
+
+}
+.menu{
+     background: rgba 0,0,0,1);
+    display: flex ; 
+    flex-flow: row nowrap; 
+    height: 40px;
+    align-items: center;
+    border-bottom:1px solid rgba(255,255,255,.5)
+}
+.logo{
+flex: 1 1 auto;
+}
+.logo a{
+    color: #fff;
+    font-size: 30px;
+}
+.logo a:hover{
+    color: red;
+    
+}
+
+
+.nav{
+flex: 4 1 auto;
+}
+.nav a{
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding:0 10px;
+    letter-spacing: 1px;
+}
+.nav a:hover{
+    color: red;
+}
+
+.social{
+flex: 1 1 auto;
+}
+.social a{
+    color: #fff;
+    font-size: 18px;
+    padding: 0 4px;
+}
+.social a:hover{
+    color: red;
+}
+.texto-principal{
+   
+    display: flex;
+    align-items: center;
+    height: 300px;
+    
+}
+.texto-principal h1{
+    color: bisque;
+    font-family:'Cuprum',serif; 
+    text-align: center;
+    font-size: 21px ;
+}
+
+.section{
+    background: #000;
+    padding: 10px;
+    
+
+}
+.container{ 
+    display: grid;
+    grid-template-columns: 400px 400PX;
+    grid-template-rows: 500px 500px;
+    justify-content: center;
+    grid-gap: 60px;
+    
+}
+.box{
+
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Mate SC', 'Regular 400';
+
+}
+.box img{width: 100%;}
+.box a{
+    color: white;
+}
+.box a:hover{ color: red;}
+.footer{
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+.pie{ 
+    text-align: center;
+}
+
+.pie a{
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+@media all and (max-width : 800px) {
+    .section{flex-direction: column;}
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .container{
+        grid-template-columns: 400px 
+    }
+    .aside{ display: flex;
+    justify-content: center;}
+}
+
+@media all and(max-width: 600px){
+    .articulos{
+        flex-direction: column;
+
+    }
+    .container{
+        grid-template-columns: 400px 
+    }
+    
+}
+@media all and (max-width: 400px){
+    .aside{flex-direction: column;}
+}
